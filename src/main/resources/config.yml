@@ -1,0 +1,15 @@
+#Player Info #
+#LoginChecker : ログインするときのチェックの有無 (true or false)
+LoginChecker: true
+#LoginCheckerをしない(バイパスする)UUID
+BypathChecker:
+-
+MCBans:
+    #評判値について(下に書かれた評判値以下のプレーヤーはログインできません。また10.0の場合は評判値についてのチェックを全員パスします。基準は小数点)
+    Rep: 7.0
+    #Banされた回数について(下に書かれた回数以上Banされているプレーヤーはログインできません。-1の場合はBanの数についてのチェックを全員パスします。記述は整数。)
+    TotalBans: 2
+#JapanMinecraftPvPでCompromised Account(流出が確認されたアカウント)判定について
+Stolen: false
+#許可するサブアカウントの数(整数,無制限に許可する場合は-1,禁止の場合は0)
+TotalSubAccount: 0

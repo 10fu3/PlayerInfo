@@ -1,0 +1,38 @@
+name: PlayerInfo
+version: ${project.version}
+main: jp.msfblue1.PlayerInfo.PlayerInfo
+
+commands:
+   advancedwhois:
+      description: ユーザー情報を表示します
+      usage: /<command>
+      aliases: [whois, whoisps]
+
+permissions:
+   advwhois.*:
+        description: ユーザー情報を表示します
+        children:
+            advwhois.whoisps: true
+            advwhois.joinshow: true
+            advwhois.bypass: true
+            advwhois.reload: true
+            advwhois.hostban: true
+
+   advwhois.whoisps:
+        description: ユーザー情報を表示します
+        default: op
+   advwhois.joinshow:
+        description: 接続時ユーザー情報を表示します
+        default: op
+   advwhois.bypass:
+        description: 接続時情報表示をしません
+        default: false
+   advwhois.reload:
+        description: リロード
+        default: false
+   advwhois.hostban:
+        description: ユーザーをホストネームBANします
+        default: false
+   advwhois.history:
+        description: いままで接続してきたプレーヤーを最終接続時刻順に並べます
+        default: op
