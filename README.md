@@ -1,1 +1,2 @@
 # PlayerInfo
+このプラグインは、fumyatan氏が開発したAdvancedWhois ver2.0をベースにMCBansの情報を表示できるようにしたプラグインです。
